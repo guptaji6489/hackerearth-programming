@@ -1,0 +1,26 @@
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+	int num;
+	cin >> num;
+	long long int a[num];
+	long long int mul=1;
+	long long int mod=pow(10,9)+7;
+	for(int i=0;i<num;i++)
+	{
+		cin>>a[i];
+	}	
+	for(int i=0;i<num;i++)
+	{
+		mul = (mul*a[i])%mod;
+	}
+	cout<<mul;	
+
+
+	
+}
+
