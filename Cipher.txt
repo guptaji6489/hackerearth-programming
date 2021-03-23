@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+ 
+
+int main(){
+
+    string S1;
+
+    int N;
+
+    cin>>S1>>N;
+
+    for(char c:S1){
+
+        if(c>='A'&&c<='Z')
+
+        {
+
+            c='A'+(c-'A'+N)%26;
+
+        }
+
+        else if(c>='a'&&c<='z')
+
+        {
+
+            c='a'+(c-'a'+N)%26;
+
+        }
+
+        else if(c>='0'&&c<='9'){
+
+            c='0'+(c-'0'+N)%10;
+
+        }
+
+        cout<<c;
+
+    }
+
+    
+
+    return 0;   
+
+}
